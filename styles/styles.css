@@ -1,0 +1,75 @@
+@font-face {
+    font-family: "Free" ;
+    src: url("/assets/Dash-Horizon-Demo.otf");
+}
+
+body {
+    font-family: 'Free';
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    color: #f2ff00;
+    letter-spacing: 0.1cm;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    color: #f4f4f4;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.search-div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+input[type="search"], input[type="text"], input[type="number"] {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #ff4500;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+button:hover {
+    background-color: #ff6347;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #ff4500;
+    color: #fff;
+}
+
+.not-found, .total {
+    text-align: center;
+    padding: 20px 0;
+}

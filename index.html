@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARMERIA DE CORROTO</title>
+
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="icon" href="favicon.png">
+</head>
+
+<body>
+    <div class="container">
+        <h1>ARMERIA DE CORROTO</h1>
+        <div class="search-div">
+            <input type="search" id="product-search" class="product" placeholder="Busca el producto...">
+            <button type="button" class="search" id="search">Buscar</button>
+            <br/>
+            <form class="addClass" id="form-add">
+                <label for="nameInput">Nombre:</label>
+                <input type="text" class="nameInput" id="nameInput" placeholder="Inserte el nombre..." required>
+                <label for="stockInput">Cantidad:</label>
+                <input type="number" class="stockInput" id="stockInput" required>
+                <label for="priceInput">Precio:</label>
+                <input type="number"  class="priceInput" id="priceInput" required>
+                <button type="submit" class="add" id="add">Insertar</button>
+            </form>
+            <form id="form-edit" class="form-edit"></form>
+        </div>
+        <div class="scroll">
+            <table id="table">
+                <thead>
+                    <tr>
+                        <th>Nombres</th>
+                        <th>Cantidades</th>
+                        <th>Precio</th>
+                        <th class="acciones">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="add-rows"></tbody>
+            </table>
+        </div>
+        <div class="not-found" id="not-found"></div>
+        <div class="total" id="total"></div>
+    </div>
+    <script src="scripts/main.js" type="module"></script>
+</body>
+
+</html>
